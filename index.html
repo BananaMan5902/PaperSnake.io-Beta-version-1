@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Territory Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gameContainer">
+    <canvas id="game"></canvas>
+
+    <div id="hud">
+        <div class="topLeft">
+            <div class="title">TERRITORY SNAKE</div>
+            <div id="stats">Territory: 0%</div>
+            <div id="length">Length: 10</div>
+        </div>
+
+        <div class="leaderboard">
+            <h3>LEADERBOARD</h3>
+            <div id="leaderboard"></div>
+        </div>
+
+        <div class="controls">
+            <b>CONTROLS</b><br>
+            Move: Mouse<br>
+            Boost: Hold Space<br>
+            Recenter: R
+        </div>
+    </div>
+
+    <div id="startScreen">
+        <h1>TERRITORY SNAKE</h1>
+        <p>Conquer the world.</p>
+        <button id="startButton">PLAY</button>
+        <div class="instructions">
+            Leave your territory, make a loop, and return home.<br>
+            Everything inside becomes YOUR territory.<br><br>
+            Hit enemy bodies to eliminate them.<br>
+            Trails do not hurt anyone.
+        </div>
+    </div>
+
+    <div id="gameOver">
+        <h1 id="gameOverTitle">GAME OVER</h1>
+        <p id="gameOverText"></p>
+        <button id="restartButton">PLAY AGAIN</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
